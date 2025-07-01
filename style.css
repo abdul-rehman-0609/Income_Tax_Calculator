@@ -1,181 +1,188 @@
-*{
+
+* {
     box-sizing: border-box;
-    outline:none;
+    outline: none;
 }
 html, body {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 h1 {
-  color:#fff;
-  padding: 10px;
-  background: rgba(0,0,0,0.65);
-  display:inline-block;
+    color: #fff;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.65);
+    display: inline-block;
 }
-
 h2 {
-  display:inline-block;
-  margin:0;
+    display: inline-block;
+    margin: 0;
 }
 h3 {
-  text-align:left;
-  margin:0 0 2px 0;
-  color: rgb(8, 8, 55);
+    text-align: left;
+    margin: 0 0 2px 0;
+    color: rgb(8, 8, 55);
 }
-
 .content {
-  width: 100%;
-  height: 100%;;
-  position: relative;
-  align-items: center;
-  padding: 20px 2%;
-  
-  
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    padding: 20px 2%;
 }
-
 .container {
- 
-  height: 100vh;
-  background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(bg1.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: 10px 8%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
 }
-.logo{
-  padding-top: 30px;
-  width: 250px;
-  cursor: pointer;
+.logo {
+    padding-top: 30px;
+    width: 250px;
+    max-width: 100%;
+    cursor: pointer;
 }
-nav{
-  width 100%;
-  margin: auto;
-  display: flex;
-  align-items: baseline;
-  justify-content:space-between;
-  padding: 10px;
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
 }
-nav ul li{
-  list-style: none;
-  display: inline-block;
-  margin: 10px 20px ;
- 
+nav ul {
+    padding-left: 0;
 }
-nav ul li a{
-  text-decoration: none;
-  color: whitesmoke;
-  text-transform: uppercase;
-  text-decoration-line: underline;
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
 }
-
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+}
 .card {
-  padding:10px;
-  margin: 5em;
-  background: grey;
-    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26);
+    padding: 20px;
+    margin: 3em auto;
+    background: grey;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26);
     border: 1px solid #eee;
-    box-sizing: border-box;
-    padding: 50px;
-
+    max-width: 600px;
+    width: 90%;
 }
 input {
-  display:block;
-  margin:5px 0px;
-  width:50%;
-  
+    display: block;
+    margin: 5px 0;
+    width: 100%;
 }
-
 a.btn,
-input[name=reset]
-{
-  display:inline;
-  width:auto;
+input[name=reset] {
+    display: inline;
+    width: auto;
 }
-
-input[name=income]
-{
-  padding:10px 5px;
-  
+input[name=income] {
+    padding: 10px 5px;
 }
-
 .btn {
-  background: #0e314f;
-  color: #fff;
-  display: inline-block;
-  font-size: 14px;
-  padding: 8px 15px;
-  text-decoration: none;
-  text-align: center;
-  min-width: 60px;
-  position: relative;
-  transition: color .1s ease;
+    background: #0e314f;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 60px;
+    position: relative;
+    transition: color .1s ease;
 }
 .btn:hover {
-  background: #357ebd;
-  cursor:pointer;
+    background: #357ebd;
+    cursor: pointer;
 }
 .btn.btnBig {
-  font-size: 18px;
-  padding: 5px 20px;
-  min-width: 100px;
-  border:none;
+    font-size: 18px;
+    padding: 5px 20px;
+    min-width: 100px;
+    border: none;
 }
 .btnClose {
-  color: #aaa;
-  font-size: 30px;
-  text-decoration: none;
-  position: absolute;
-  right: 5px;
-  top: 0;
+    color: #aaa;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
 }
 .btnClose:hover {
-  color: #919191;
+    color: #919191;
 }
-
 .modal:before {
-  content: "";
-  display: none;
-  background: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
 }
 .modal:target:before {
-  display: block;
+    display: block;
 }
 .modal:target .modalDialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-  top: 20%;
+    transform: translate(0, 0);
+    top: 20%;
 }
 .modalDialog {
-  background: lightgrey;
-  margin-left: -200px;
-  position: fixed;
-  left: 50%;
-  top: -100%;
-  z-index: 11;
-  width: 360px;
-  -webkit-transform: translate(0, -500%);
-  -ms-transform: translate(0, -500%);
-  transform: translate(0, -500%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
+    background: lightgrey;
+    margin-left: -200px;
+    position: fixed;
+    left: 50%;
+    top: -100%;
+    z-index: 11;
+    width: 360px;
+    max-width: 90%;
+    transform: translate(0, -500%);
+    transition: transform 0.3s ease-out;
 }
 .modalBody {
-  padding: 20px;
-  border-top: black solid 1px;
+    padding: 20px;
+    border-top: black solid 1px;
+}
+.modalFooter {
+    padding: 15px 5px;
+    border-top: black solid 1px;
 }
 
-.modalFooter {
-  padding: 15px 5px;
-  border-top: black solid 1px;
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .card {
+        margin: 1em;
+        padding: 15px;
+    }
+    input {
+        width: 100%;
+    }
+    .logo {
+        width: 150px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+    .modalDialog {
+        width: 90%;
+        margin-left: -45%;
+    }
 }
