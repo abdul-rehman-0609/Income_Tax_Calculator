@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style1.css">
+    <script src="working.js"> </script> 
+    
+    
+</head>
+<body>
+  <div class="container">
+    <nav>
+
+    <img src="logo1.jpeg" class="logo">
+    <ul>
+  
+        <li> <a href="https://download1.fbr.gov.pk/Docs/20237211872416372IncomeTaxOrdinance,2001Amendedupto30.06.2023.pdf" target="_blank">Tax Slabs</a></li>
+        <li> <a href="https://www.fbr.gov.pk/contact-us/132245/132268" target="_blank">Contact</a></li>
+        
+    </ul>
+    
+    </nav>
+    <hr>
+   
+    
+          <div class="card">
+            <h2>INCOME TAX</h2>
+            <hr>
+            <p>Tax levied by a government directly on income, especially an annual tax on personal income.</p>
+          
+          
+            <h3>CACULATE YOUR INCOME TAX:</h3>
+            <form name="incomeTaxForm" autocomplete="off">
+              <input id="income" type="float" step="0.01" name="income" min="0" placeholder="Input your Income in rupees">
+               <a href="#modal" class="btn btnBig" onclick="calcIncomeTax()">Enter</a>
+              <input type="reset" name="reset" class="btn btnBig">
+      
+            </form>
+          </div>
+          
+          </div>
+        </div>
+        
+        
+      <div class="modal" id="modal" aria-hidden="true">
+        <div class="modalDialog">
+          <div class="modalBody">
+             <a href="#" class="btnClose" aria-hidden="true">×</a>
+            <p>You owe "<span id="total"></span> rupees" in Income Tax.</p>
+          </div>
+          <div class="modalFooter">
+            <a href="#" class="btn">Close</a>
+          </div>
+        </div>
+      </div>
+      </div>
+</body>
+</html>
