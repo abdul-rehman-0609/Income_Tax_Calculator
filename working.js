@@ -5,7 +5,6 @@ $(window).resize(function () {
     $('#header').height(newHeaderHeight);
     
     var newContentHeight = windowHeight * 0.7;
-    var newContentHeightMargin = (windowHeight * 0.3);
     $('#content').height(newContentHeight);
   });
   
@@ -13,30 +12,30 @@ $(window).resize(function () {
   function calcIncomeTax() {
     var preFormattedIncome = document.getElementById("income").value;
     var income = preFormattedIncome.replace(/[^\d.-]/g, '');
-    // Tax slabs and rates (as of knowledge cutoff in 2023)
+    // Tax slabs and rates (as of knowledge cutoff in 2025)
     if (income <= 600000) {
         // First slab: 0% tax
       document.getElementById("total").innerHTML = (0.00).toFixed(2);
-    } else if (income >= 600000 && income <= 1200000) {
-        // Second slab: 2.5% tax
-        var incomeTax = (income - 600000) * 0.025;
+    } else if (income > 600000 && income <= 1200000) {
+        // Second slab: 5% tax
+        var incomeTax = (income - 600000) * 0.05;
         document.getElementById("total").innerHTML = incomeTax.toFixed(2);
-    } else if (income >= 1200000  && income <= 2400000){
-        // Third slab: 12.5% tax
-        var incomeTax = 15000 + (income - 1200000) * 0.125; 
+    } else if (income > 1200000  && income <= 2200000){
+        // Third slab: 15% tax
+        var incomeTax = 30000 + (income - 1200000) * 0.15; 
         document.getElementById("total").innerHTML = incomeTax.toFixed(2);
-    } else if (income >= 2400000 && income <= 3600000) {
-        /// Fourth slab: 22.5% tax
-        var incomeTax = 165000 + (income - 2400000) * 0.225;
+    } else if (income > 2200000 && income <= 3200000) {
+        /// Fourth slab: 25% tax
+        var incomeTax = 180000 + (income - 2200000) * 0.25;
         document.getElementById("total").innerHTML = incomeTax.toFixed(2);
-    } else if (income >= 3600000 && income <= 6000000) {
-         /// Fifth slab: 27.5% tax
-         var incomeTax = 435000 + (income - 3600000) * 0.275;
+    } else if (income > 3200000 && income <= 4100000) {
+         /// Fifth slab: 30% tax
+         var incomeTax = 430000 + (income - 3200000) * 0.30;
         document.getElementById("total").innerHTML = incomeTax.toFixed(2);
     }
-    else {
+    else { //*where income > 4100000
  // Sixth slab: 35% tax
-        var incomeTax = 1095000 + (income - 6000000) * 0.35;
+        var incomeTax = 700000 + (income - 6000000) * 0.35;
         document.getElementById("total").innerHTML = incomeTax.toFixed(2);
     }
   }
