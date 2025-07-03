@@ -68,9 +68,9 @@ html, body {
   background: rgba(50, 50, 50, 0.85);
   border-radius: 12px;
   padding: 40px 35px;
-  width: 100%;
+  width: 90%;
   max-width: 700px;
-  margin: 80px auto;
+  margin: 80px auto; /* Horizontal & vertical centering */
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
@@ -292,9 +292,10 @@ input[type="reset"]:hover {
 }
 .social-icons a {
   color: #ccc;
-  font-size: 18px;
+  font-size: 26px; /* ⬅️ Increased from 18 or 16 */
   transition: color 0.3s ease;
 }
+
 .social-icons a:hover {
   color: #ffc107;
 }
@@ -313,13 +314,15 @@ input[type="reset"]:hover {
   .logo {
     width: 140px;
   }
-  .card {
-    margin: 20px 10px;
+.card {
+    margin: 40px auto;
+    padding: 25px 20px;
+    width: 95%;
   }
   .footer-content {
     gap: 8px;
   }
   .social-icons a {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
