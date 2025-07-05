@@ -154,6 +154,7 @@ input[type="reset"]:hover {
   margin-top: 10px;
   font-size: 13px;
   color: #aaa;
+  font-weight: bold;
 }
 .powered-by a {
   color: #ffc107;
@@ -325,4 +326,14 @@ input[type="reset"]:hover {
   .social-icons a {
     font-size: 24px;
   }
+}
+
+.disclaimer-text, .footer-disclaimer {
+  font-size: 0.85rem;
+  color: #ccc;
+  text-align: center;
+  margin-top: 1rem;
+}
+.footer-disclaimer {
+  margin-top: 0.5rem;
 }
